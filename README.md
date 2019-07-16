@@ -2,7 +2,6 @@
 ### Installation Steps with the Ionic CLI:
 ```bash
 $ sudo npm install -g ionic
-$ ionic start myBlank blank
 ```
 ### Build Meed ionic 4 app for web browser.
 ```bash
