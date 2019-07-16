@@ -1,0 +1,28 @@
+.create-account-email-input{
+    border: 2px solid lightgrey;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    height: 52px;
+    margin-top: 40px;
+}
+.create-account-password-input{
+    border: 2px solid lightgrey;
+    border-radius: 12px;
+    height: 52px;
+}
+.create-account-footer::before{
+    background: none;
+}
+.create-account-footer{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.create-account-footer ion-button{
+    text-transform: capitalize;
+    --background: #4660D9;
+    height: 50px;
+}
+.create-account-pagecontent{
+
+}

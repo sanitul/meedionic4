@@ -1,0 +1,20 @@
+.signup-email-input{
+    border: 2px solid;
+    border-radius: 12px;
+}
+.singup-footer::before{
+    background: none;
+}
+.singup-footer{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.singup-footer ion-button{
+    text-transform: capitalize;
+    --background: #4660D9;
+    height: 50px;
+}
+.singup-pagecontent{
+    margin-top: 100px;
+}

@@ -1,0 +1,33 @@
+.login-screen{
+    --background:#405AD1;
+    .login-screen-pagecontent{
+        margin-top: 60px;
+        text-align: center !important;
+    }
+    .login-screen-email-input{
+        border: 1px solid;
+        border-radius: 12px;
+        border-color: lightgray;
+        color: white;
+        margin-bottom: 10px;
+        text-align: left;
+        height: 52px;
+    }
+    .login-screen-password-input{
+        border: 1px solid;
+        border-radius: 12px;
+        border-color: lightgray;
+        color: white;
+        text-align: left;
+        height: 52px;
+    }
+}
+.login-screen-footer::before{
+    background: none;
+}
+.login-screen-footer{
+    ion-segment-button div{
+        font-size: smaller;
+        text-transform: capitalize;
+    }
+}

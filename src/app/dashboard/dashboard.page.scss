@@ -1,0 +1,11 @@
+.dashboard-tab-bar{
+    display: flex;
+    overflow-x: scroll;
+    .tab-item {
+        display: inline-block !important;
+        width: auto !important;
+    }
+    .tab-item:first-child{
+       
+    }
+}

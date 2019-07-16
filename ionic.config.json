@@ -1,5 +1,7 @@
 {
   "name": "meed",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

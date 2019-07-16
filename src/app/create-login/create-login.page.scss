@@ -1,0 +1,15 @@
+.create-login{
+    --background:#405AD1;
+    .ctr-btn{
+        width: 100%;
+        text-transform: capitalize;
+        --border-color: red;
+        height: 50px;
+    }
+    .sign-btn{
+        width: 100%;
+        text-transform: capitalize;
+        --background: #546ACD;
+        height: 50px;
+    }
+}

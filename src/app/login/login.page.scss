@@ -1,0 +1,38 @@
+.loginpage{
+    background-image: url('../../assets/meed_rising_above_hiking.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-55%) translateY(-50%);
+    }
+    .text-input-md {
+      color: white;
+    }
+    .item-icon {
+      padding: 15px 3px 6px 15px !important;
+    }
+    .prefrences-btn{
+      position: absolute;
+      right: 8px;
+    }
+    .eye-icon {
+      margin-right: 8px!important;
+    }
+    .inner-scroll {
+      overflow: hidden;
+    }
+    ion-item {
+        --ion-item-background: transparent;
+        --color:white;
+    }
+  
+  }
+  

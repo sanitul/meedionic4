@@ -1,0 +1,5 @@
+dependencies {
+    // Airship - FCM
+  	implementation 'com.urbanairship.android:urbanairship-fcm:9.7.1'
+  	implementation 'com.google.firebase:firebase-messaging:17.3.4'
+}

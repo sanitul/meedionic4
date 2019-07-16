@@ -1,0 +1,21 @@
+project.ext {
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    coreMinSdk = 14
+
+    supportVersion = '27.1.1'
+    eventbusVersion = '3.1.1'
+    constraintLayoutVersion = '1.1.0-beta4'
+
+    dexmakerVersion = '2.16.0'
+    supportTestVersion = '1.0.1'
+    mockitoVersion = '1.10.19'
+    robotiumVersion = '5.6.3'
+    espressoVersion = '3.0.1'
+    leakcanaryVersion = '1.5.4'
+    robolectricVersion = '3.7.1'
+    junitVersion = '4.12'
+    androidAssertJVersion = '1.2.0'
+    guavaVersion = '23.1-android'
+    cardioVersion = '5.3.0'
+}
