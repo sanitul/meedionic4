@@ -8,19 +8,19 @@ import { IonicModule } from '@ionic/angular';
 import { SingupEmailPage } from './singup-email.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: SingupEmailPage
-  }
+	{
+		path: '',
+		component: SingupEmailPage
+	}
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [SingupEmailPage]
+	imports: [
+		CommonModule,
+		FormsModule,
+		IonicModule,
+		RouterModule.forChild(routes)
+	],
+	declarations: [SingupEmailPage]
 })
-export class SingupEmailPageModule {}
+export class SingupEmailPageModule { }

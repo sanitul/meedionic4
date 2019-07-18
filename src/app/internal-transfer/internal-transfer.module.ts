@@ -8,19 +8,19 @@ import { IonicModule } from '@ionic/angular';
 import { InternalTransferPage } from './internal-transfer.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: InternalTransferPage
-  }
+	{
+		path: '',
+		component: InternalTransferPage
+	}
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [InternalTransferPage]
+	imports: [
+		CommonModule,
+		FormsModule,
+		IonicModule,
+		RouterModule.forChild(routes)
+	],
+	declarations: [InternalTransferPage]
 })
-export class InternalTransferPageModule {}
+export class InternalTransferPageModule { }

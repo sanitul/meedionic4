@@ -8,19 +8,19 @@ import { IonicModule } from '@ionic/angular';
 import { CreateLoginPage } from './create-login.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: CreateLoginPage
-  }
+	{
+		path: '',
+		component: CreateLoginPage
+	}
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [CreateLoginPage]
+	imports: [
+		CommonModule,
+		FormsModule,
+		IonicModule,
+		RouterModule.forChild(routes)
+	],
+	declarations: [CreateLoginPage]
 })
-export class CreateLoginPageModule {}
+export class CreateLoginPageModule { }

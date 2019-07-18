@@ -8,19 +8,19 @@ import { IonicModule } from '@ionic/angular';
 import { DashboardSummaryPage } from './dashboard-summary.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: DashboardSummaryPage
-  }
+	{
+		path: '',
+		component: DashboardSummaryPage
+	}
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [DashboardSummaryPage]
+	imports: [
+		CommonModule,
+		FormsModule,
+		IonicModule,
+		RouterModule.forChild(routes)
+	],
+	declarations: [DashboardSummaryPage]
 })
-export class DashboardSummaryPageModule {}
+export class DashboardSummaryPageModule { }

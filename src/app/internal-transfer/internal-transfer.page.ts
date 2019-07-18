@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-internal-transfer',
-  templateUrl: './internal-transfer.page.html',
-  styleUrls: ['./internal-transfer.page.scss'],
+	selector: 'app-internal-transfer',
+	templateUrl: './internal-transfer.page.html',
+	styleUrls: ['./internal-transfer.page.scss'],
 })
 export class InternalTransferPage implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }

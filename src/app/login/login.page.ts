@@ -1,20 +1,20 @@
-import { Component, OnInit, ViewChild} from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NavController } from '@ionic/angular';
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+	selector: 'app-login',
+	templateUrl: './login.page.html',
+	styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  constructor(
-    private navCtrl: NavController
-  ) { }
+	constructor(
+		private navCtrl: NavController
+	) { }
 
-  ngOnInit() {
-      
-  }
-  goToDashBoard(){
-    this.navCtrl.navigateForward('/details-screen/dashboard');
-  }
+	ngOnInit() {
+
+	}
+	goToDashBoard() {
+		this.navCtrl.navigateForward('/details-screen/dashboard');
+	}
 
 }

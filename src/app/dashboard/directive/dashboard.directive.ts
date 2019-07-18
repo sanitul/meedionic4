@@ -1,10 +1,10 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appDashboard]'
+	selector: '[appDashboard]'
 })
 export class DashboardDirective {
 
-  constructor() { }
+	constructor() { }
 
 }

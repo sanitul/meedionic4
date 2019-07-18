@@ -8,19 +8,19 @@ import { IonicModule } from '@ionic/angular';
 import { MeedsharePage } from './meedshare.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: MeedsharePage
-  }
+	{
+		path: '',
+		component: MeedsharePage
+	}
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [MeedsharePage]
+	imports: [
+		CommonModule,
+		FormsModule,
+		IonicModule,
+		RouterModule.forChild(routes)
+	],
+	declarations: [MeedsharePage]
 })
-export class MeedsharePageModule {}
+export class MeedsharePageModule { }

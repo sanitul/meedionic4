@@ -4,24 +4,24 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MeedsharePage } from './meedshare.page';
 
 describe('MeedsharePage', () => {
-  let component: MeedsharePage;
-  let fixture: ComponentFixture<MeedsharePage>;
+	let component: MeedsharePage;
+	let fixture: ComponentFixture<MeedsharePage>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ MeedsharePage ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-    .compileComponents();
-  }));
+	beforeEach(async(() => {
+		TestBed.configureTestingModule({
+			declarations: [MeedsharePage],
+			schemas: [CUSTOM_ELEMENTS_SCHEMA],
+		})
+			.compileComponents();
+	}));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(MeedsharePage);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(() => {
+		fixture = TestBed.createComponent(MeedsharePage);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });

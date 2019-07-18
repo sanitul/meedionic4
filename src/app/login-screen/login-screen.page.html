@@ -1,37 +1,39 @@
 <ion-content padding class="login-screen">
-    <div class="login-screen-pagecontent">
-        <img width="80" src="assets/meed_white_logo.png">
-        <h1 style="font-weight: bold;color:white;margin-bottom: 30px;">Welcome back!</h1>
-        <form [formGroup]="loginForm" (ngSubmit)="doLogin(loginForm.value)">
-        <ion-input (keyup.enter)="doLogin(loginForm.value)" formControlName="username" clearInput placeholder="Your email address" type="email" class="login-screen-email-input">
-        </ion-input>
-        <ion-input (keyup.enter)="doLogin(loginForm.value)" formControlName="password" clearInput placeholder="Your password" type="password" class="login-screen-password-input">
-        </ion-input>
-    </form>
-        <p>
-            <a style="color: #96A9FC">Forget password?</a>
-        </p>
-    </div>
+	<div class="login-screen-pagecontent">
+		<img width="80" src="assets/meed_white_logo.png">
+		<h1 style="font-weight: bold;color:white;margin-bottom: 30px;">Welcome back!</h1>
+		<form [formGroup]="loginForm" (ngSubmit)="doLogin(loginForm.value)">
+			<ion-input (keyup.enter)="doLogin(loginForm.value)" formControlName="username" clearInput
+				placeholder="Your email address" type="email" class="login-screen-email-input">
+			</ion-input>
+			<ion-input (keyup.enter)="doLogin(loginForm.value)" formControlName="password" clearInput
+				placeholder="Your password" type="password" class="login-screen-password-input">
+			</ion-input>
+		</form>
+		<p>
+			<a style="color: #96A9FC">Forget password?</a>
+		</p>
+	</div>
 </ion-content>
 <ion-footer class="login-screen-footer">
-    <ion-segment style="background:#405AD1;height:55px;">
-        <ion-segment-button (click)="gotoCreateLogin()" style="color:white" icon-left>
-            <ion-icon style="margin-top: -12px;" name="repeat"></ion-icon>
-            <div>
-                Swith Account
-            </div>
-        </ion-segment-button>
-        <ion-segment-button style="color:white" icon-left>
-            <ion-icon style="margin-top: -12px;" name="finger-print"></ion-icon>
-            <div>
-                Face ID
-            </div>
-        </ion-segment-button>
-        <ion-segment-button style="color:white" icon-left>
-                <ion-icon style="margin-top: -12px;" name="more"></ion-icon>
-                <div>
-                    More Options
-                </div>
-            </ion-segment-button>
-    </ion-segment>
+	<ion-segment style="background:#405AD1;height:55px;">
+		<ion-segment-button (click)="gotoCreateLogin()" style="color:white" icon-left>
+			<ion-icon style="margin-top: -12px;" name="repeat"></ion-icon>
+			<div>
+				Swith Account
+			</div>
+		</ion-segment-button>
+		<ion-segment-button style="color:white" icon-left>
+			<ion-icon style="margin-top: -12px;" name="finger-print"></ion-icon>
+			<div>
+				Face ID
+			</div>
+		</ion-segment-button>
+		<ion-segment-button style="color:white" icon-left>
+			<ion-icon style="margin-top: -12px;" name="more"></ion-icon>
+			<div>
+				More Options
+			</div>
+		</ion-segment-button>
+	</ion-segment>
 </ion-footer>

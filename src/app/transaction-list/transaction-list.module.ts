@@ -8,19 +8,19 @@ import { IonicModule } from '@ionic/angular';
 import { TransactionListPage } from './transaction-list.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: TransactionListPage
-  }
+	{
+		path: '',
+		component: TransactionListPage
+	}
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [TransactionListPage]
+	imports: [
+		CommonModule,
+		FormsModule,
+		IonicModule,
+		RouterModule.forChild(routes)
+	],
+	declarations: [TransactionListPage]
 })
-export class TransactionListPageModule {}
+export class TransactionListPageModule { }

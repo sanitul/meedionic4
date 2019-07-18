@@ -8,19 +8,19 @@ import { IonicModule } from '@ionic/angular';
 import { P2pTransferPage } from './p2p-transfer.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: P2pTransferPage
-  }
+	{
+		path: '',
+		component: P2pTransferPage
+	}
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [P2pTransferPage]
+	imports: [
+		CommonModule,
+		FormsModule,
+		IonicModule,
+		RouterModule.forChild(routes)
+	],
+	declarations: [P2pTransferPage]
 })
-export class P2pTransferPageModule {}
+export class P2pTransferPageModule { }
