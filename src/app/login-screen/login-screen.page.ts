@@ -27,7 +27,7 @@ export class LoginScreenPage implements OnInit {
 		}
 	}
 	gotoCreateLogin() {
-		this.navCtrl.navigateForward('/singup-email');
+		this.navCtrl.navigateForward('/singup/email');
 	}
 
 	async presentLoading() {
@@ -38,7 +38,7 @@ export class LoginScreenPage implements OnInit {
 		await loading.present();
 		loading.onDidDismiss()
 			.then((data) => {
-				this.navCtrl.navigateForward('/details-screen/dashboard');
+				this.navCtrl.navigateForward('/customer');
 			});
 	}
 

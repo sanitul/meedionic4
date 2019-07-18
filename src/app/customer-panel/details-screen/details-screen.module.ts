@@ -5,15 +5,25 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LoginPage } from './login.page';
+import { DetailsScreenPage } from './details-screen.page';
 
 const routes: Routes = [
 	{
+		path: 'panel',
+		component: DetailsScreenPage,
+		children: [
+			{
+				path: 'dashboard',
+				loadChildren: '../dashboard/dashboard.module#DashboardPageModule'
+			}
+		]
+	},
+	{
 		path: '',
-		component: LoginPage
+		redirectTo: 'panel/dashboard',
+		pathMatch: 'full'
 	}
 ];
-
 @NgModule({
 	imports: [
 		CommonModule,
@@ -21,6 +31,6 @@ const routes: Routes = [
 		IonicModule,
 		RouterModule.forChild(routes)
 	],
-	declarations: [LoginPage]
+	declarations: [DetailsScreenPage]
 })
-export class LoginPageModule { }
+export class DetailsScreenPageModule { }

@@ -7,8 +7,10 @@
 				<ion-text style="color:#97A8F0">Save more. </ion-text>
 				<ion-text style="color: #687FDD">Do more. </ion-text>
 			</p>
-			<ion-button routerLink="/create-account" routerDirection="forward" color="light" fill="outline" class="ctr-btn"
+
+			<ion-button (click)="gotoCreateAccount()" color="light" fill="outline" class="ctr-btn"
 				expand="block">Create New Account</ion-button>
+
 			<ion-button (click)="gotoLoginScreen()" class="sign-btn" expand="block">Sign In</ion-button>
 		</ion-row>
 	</ion-grid>

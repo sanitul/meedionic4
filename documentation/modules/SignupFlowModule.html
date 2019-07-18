@@ -34,7 +34,7 @@
 
 <ol class="breadcrumb">
     <li>Modules</li>
-    <li>MeedsharePageModule</li>
+    <li>SignupFlowModule</li>
 </ol>
 
 <div class="text-center module-graph-container">
@@ -62,28 +62,28 @@
 <polygon fill="#fb8072" stroke="transparent" points="406,-10 406,-30 426,-30 426,-10 406,-10"/>
 <text text-anchor="start" x="429.7258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
 <g id="clust1" class="cluster">
-<title>cluster_MeedsharePageModule</title>
-<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="166,-70 166,-195 330,-195 330,-70 166,-70"/>
+<title>cluster_SignupFlowModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="145,-70 145,-195 351,-195 351,-70 145,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_MeedsharePageModule_declarations</title>
-<polygon fill="none" stroke="#000000" points="188,-78 188,-130 308,-130 308,-78 188,-78"/>
+<g id="clust3" class="cluster">
+<title>cluster_SignupFlowModule_imports</title>
+<polygon fill="none" stroke="#000000" points="153,-78 153,-130 343,-130 343,-78 153,-78"/>
 </g>
-<!-- MeedsharePage -->
+<!-- SignupFlowRoutingModule -->
 <g id="node1" class="node">
-<title>MeedsharePage</title>
-<polygon fill="#ffffb3" stroke="#000000" points="300.1207,-122 195.8793,-122 195.8793,-86 300.1207,-86 300.1207,-122"/>
-<text text-anchor="middle" x="248" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MeedsharePage</text>
+<title>SignupFlowRoutingModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="334.6206,-122 331.6206,-126 310.6206,-126 307.6206,-122 161.3794,-122 161.3794,-86 334.6206,-86 334.6206,-122"/>
+<text text-anchor="middle" x="248" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">SignupFlowRoutingModule</text>
 </g>
-<!-- MeedsharePageModule -->
+<!-- SignupFlowModule -->
 <g id="node2" class="node">
-<title>MeedsharePageModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="322.1699,-187 319.1699,-191 298.1699,-191 295.1699,-187 173.8301,-187 173.8301,-151 322.1699,-151 322.1699,-187"/>
-<text text-anchor="middle" x="248" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">MeedsharePageModule</text>
+<title>SignupFlowModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="312.0028,-187 309.0028,-191 288.0028,-191 285.0028,-187 183.9972,-187 183.9972,-151 312.0028,-151 312.0028,-187"/>
+<text text-anchor="middle" x="248" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">SignupFlowModule</text>
 </g>
-<!-- MeedsharePage&#45;&gt;MeedsharePageModule -->
+<!-- SignupFlowRoutingModule&#45;&gt;SignupFlowModule -->
 <g id="edge1" class="edge">
-<title>MeedsharePage&#45;&gt;MeedsharePageModule</title>
+<title>SignupFlowRoutingModule&#45;&gt;SignupFlowModule</title>
 <path fill="none" stroke="#000000" d="M248,-122.1061C248,-122.1061 248,-140.991 248,-140.991"/>
 <polygon fill="#000000" stroke="#000000" points="244.5001,-140.9909 248,-150.991 251.5001,-140.991 244.5001,-140.9909"/>
 </g>
@@ -117,7 +117,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/customer-panel/meedshare/meedshare.module.ts</code>
+            <code>src/app/signup-flow/signup-flow.module.ts</code>
         </p>
 
 
@@ -126,11 +126,11 @@
         <div class="container-fluid module">
             <div class="row">
                 <div class="col-sm-3">
-                    <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank"
-                            title="Official documentation about module declarations"><span class="icon ion-ios-information-circle-outline"></span></a></h3>
+                    <h3>Imports<a href="https://angular.io/api/core/NgModule#imports" target="_blank" title="Official documentation about module imports"><span
+                                class="icon ion-ios-information-circle-outline"></a></h3>
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <a href="../components/MeedsharePage.html">MeedsharePage</a>
+                            <a href="../modules/SignupFlowRoutingModule.html">SignupFlowRoutingModule</a>
                         </li>
                     </ul>
                 </div>
@@ -144,30 +144,17 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { CommonModule } from &#x27;@angular/common&#x27;;
-import { FormsModule } from &#x27;@angular/forms&#x27;;
-import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
 
-import { IonicModule } from &#x27;@ionic/angular&#x27;;
-
-import { MeedsharePage } from &#x27;./meedshare.page&#x27;;
-
-const routes: Routes &#x3D; [
-	{
-		path: &#x27;&#x27;,
-		component: MeedsharePage
-	}
-];
+import { SignupFlowRoutingModule } from &#x27;./signup-flow-routing.module&#x27;;
 
 @NgModule({
+	declarations: [],
 	imports: [
 		CommonModule,
-		FormsModule,
-		IonicModule,
-		RouterModule.forChild(routes)
-	],
-	declarations: [MeedsharePage]
+		SignupFlowRoutingModule
+	]
 })
-export class MeedsharePageModule { }
+export class SignupFlowModule { }
 </code></pre>
     </div>
 </div>
@@ -203,7 +190,7 @@ export class MeedsharePageModule { }
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
-            var COMPODOC_CURRENT_PAGE_URL = 'MeedsharePageModule.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'SignupFlowModule.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

@@ -14,7 +14,10 @@ export class CreateLoginPage implements OnInit {
 	ngOnInit() {
 	}
 	gotoLoginScreen() {
-		this.navCtrl.navigateForward('/login-screen');
+		this.navCtrl.navigateForward('/login');
+	}
+	gotoCreateAccount() {
+		this.navCtrl.navigateForward('/singup/createaccount');
 	}
 
 }

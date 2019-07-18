@@ -14,7 +14,7 @@ export class SingupEmailPage implements OnInit {
 	ngOnInit() {
 	}
 	gotoCreateLogin() {
-		this.navCtrl.navigateForward('/create-login');
+		this.navCtrl.navigateForward('/singup/createlogin');
 	}
 
 }

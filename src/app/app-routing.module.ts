@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
+/**
+ * App top-level module that is dedicated to routing and imported by the root AppModule
+ * Lazy Loading Feature Modules routes.
+ * default feature loads signup module, which contain all signup page,components etc
+ */
 const routes: Routes = [
-	{ path: '', redirectTo: 'singup-email', pathMatch: 'full' },
-	{ path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-	{ path: 'details-screen', loadChildren: './details-screen/details-screen.module#DetailsScreenPageModule' },
-	{ path: 'singup-email', loadChildren: './singup-email/singup-email.module#SingupEmailPageModule' },
-	{ path: 'create-login', loadChildren: './create-login/create-login.module#CreateLoginPageModule' },
-	{ path: 'login-screen', loadChildren: './login-screen/login-screen.module#LoginScreenPageModule' },
-	{ path: 'create-account', loadChildren: './create-account/create-account.module#CreateAccountPageModule' }
+	{ path: '', redirectTo: 'singup', pathMatch: 'full' },
+	{ path: 'singup', loadChildren: './signup-flow/signup-flow.module#SignupFlowModule' },
+	{ path: 'login', loadChildren: './login-screen/login-screen.module#LoginScreenPageModule' },
+	{ path: 'customer', loadChildren: './customer-panel/customer-panel.module#CustomerPanelModule' }
 ];
 
 @NgModule({

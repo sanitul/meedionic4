@@ -117,7 +117,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/details-screen/details-screen.module.ts</code>
+            <code>src/app/customer-panel/details-screen/details-screen.module.ts</code>
         </p>
 
 
@@ -153,7 +153,7 @@ import { DetailsScreenPage } from &#x27;./details-screen.page&#x27;;
 
 const routes: Routes &#x3D; [
 	{
-		path: &#x27;&#x27;,
+		path: &#x27;panel&#x27;,
 		component: DetailsScreenPage,
 		children: [
 			{
@@ -161,9 +161,13 @@ const routes: Routes &#x3D; [
 				loadChildren: &#x27;../dashboard/dashboard.module#DashboardPageModule&#x27;
 			}
 		]
+	},
+	{
+		path: &#x27;&#x27;,
+		redirectTo: &#x27;panel/dashboard&#x27;,
+		pathMatch: &#x27;full&#x27;
 	}
 ];
-
 @NgModule({
 	imports: [
 		CommonModule,

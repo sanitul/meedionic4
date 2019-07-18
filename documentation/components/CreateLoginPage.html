@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/create-login/create-login.page.ts</code>
+    <code>src/app/signup-flow/create-login/create-login.page.ts</code>
 </p>
 
 
@@ -131,6 +131,9 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#gotoCreateAccount">gotoCreateAccount</a>
+                            </li>
+                            <li>
                                 <a href="#gotoLoginScreen">gotoLoginScreen</a>
                             </li>
                             <li>
@@ -159,7 +162,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/create-login/create-login.page.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/signup-flow/create-login/create-login.page.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -210,6 +213,45 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="gotoCreateAccount"></a>
+                    <span class="name">
+                        <b>
+                            gotoCreateAccount
+                        </b>
+                        <a href="#gotoCreateAccount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>gotoCreateAccount()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/signup-flow/create-login/create-login.page.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="gotoLoginScreen"></a>
                     <span class="name">
                         <b>
@@ -229,7 +271,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/app/create-login/create-login.page.ts:16</a></div>
+                            class="link-to-prism">src/app/signup-flow/create-login/create-login.page.ts:16</a></div>
                 </td>
             </tr>
 
@@ -268,7 +310,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="14"
-                            class="link-to-prism">src/app/create-login/create-login.page.ts:14</a></div>
+                            class="link-to-prism">src/app/signup-flow/create-login/create-login.page.ts:14</a></div>
                 </td>
             </tr>
 
@@ -306,7 +348,10 @@ export class CreateLoginPage implements OnInit {
 	ngOnInit() {
 	}
 	gotoLoginScreen() {
-		this.navCtrl.navigateForward(&#x27;/login-screen&#x27;);
+		this.navCtrl.navigateForward(&#x27;/login&#x27;);
+	}
+	gotoCreateAccount() {
+		this.navCtrl.navigateForward(&#x27;/singup/createaccount&#x27;);
 	}
 
 }
@@ -323,8 +368,10 @@ export class CreateLoginPage implements OnInit {
 				&lt;ion-text style&#x3D;&quot;color:#97A8F0&quot;&gt;Save more. &lt;/ion-text&gt;
 				&lt;ion-text style&#x3D;&quot;color: #687FDD&quot;&gt;Do more. &lt;/ion-text&gt;
 			&lt;/p&gt;
-			&lt;ion-button routerLink&#x3D;&quot;/create-account&quot; routerDirection&#x3D;&quot;forward&quot; color&#x3D;&quot;light&quot; fill&#x3D;&quot;outline&quot; class&#x3D;&quot;ctr-btn&quot;
+
+			&lt;ion-button (click)&#x3D;&quot;gotoCreateAccount()&quot; color&#x3D;&quot;light&quot; fill&#x3D;&quot;outline&quot; class&#x3D;&quot;ctr-btn&quot;
 				expand&#x3D;&quot;block&quot;&gt;Create New Account&lt;/ion-button&gt;
+
 			&lt;ion-button (click)&#x3D;&quot;gotoLoginScreen()&quot; class&#x3D;&quot;sign-btn&quot; expand&#x3D;&quot;block&quot;&gt;Sign In&lt;/ion-button&gt;
 		&lt;/ion-row&gt;
 	&lt;/ion-grid&gt;
@@ -377,8 +424,8 @@ export class CreateLoginPage implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-content padding class="create-login">	<ion-grid style="height: 100%">		<ion-row justify-content-center align-items-center style="height: 100%; flex-direction: column">			<img id="meed-logo-img" width="110" src="https://s3.amazonaws.com/prod-meed-www/bank_logos/meed_white_logo.png">			<p style="font-weight: 500;">				<ion-text style="color:White">Earn More. </ion-text>				<ion-text style="color:#97A8F0">Save more. </ion-text>				<ion-text style="color: #687FDD">Do more. </ion-text>			</p>			<ion-button routerLink="/create-account" routerDirection="forward" color="light" fill="outline" class="ctr-btn"				expand="block">Create New Account</ion-button>			<ion-button (click)="gotoLoginScreen()" class="sign-btn" expand="block">Sign In</ion-button>		</ion-row>	</ion-grid></ion-content></div>'
-    var COMPONENTS = [{'name': 'AccountSummaryComponent', 'selector': 'app-account-summary'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CreateAccountPage', 'selector': 'app-create-account'},{'name': 'CreateLoginPage', 'selector': 'app-create-login'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DashboardSummaryPage', 'selector': 'app-dashboard-summary'},{'name': 'DetailsScreenPage', 'selector': 'app-details-screen'},{'name': 'InternalTransferPage', 'selector': 'app-internal-transfer'},{'name': 'InviteUserPage', 'selector': 'app-invite-user'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'LoginScreenPage', 'selector': 'app-login-screen'},{'name': 'MeedsharePage', 'selector': 'app-meedshare'},{'name': 'P2pTransferPage', 'selector': 'app-p2p-transfer'},{'name': 'SingupEmailPage', 'selector': 'app-singup-email'},{'name': 'TransactionListPage', 'selector': 'app-transaction-list'}];
+        var COMPONENT_TEMPLATE = '<div><ion-content padding class="create-login">	<ion-grid style="height: 100%">		<ion-row justify-content-center align-items-center style="height: 100%; flex-direction: column">			<img id="meed-logo-img" width="110" src="https://s3.amazonaws.com/prod-meed-www/bank_logos/meed_white_logo.png">			<p style="font-weight: 500;">				<ion-text style="color:White">Earn More. </ion-text>				<ion-text style="color:#97A8F0">Save more. </ion-text>				<ion-text style="color: #687FDD">Do more. </ion-text>			</p>			<ion-button (click)="gotoCreateAccount()" color="light" fill="outline" class="ctr-btn"				expand="block">Create New Account</ion-button>			<ion-button (click)="gotoLoginScreen()" class="sign-btn" expand="block">Sign In</ion-button>		</ion-row>	</ion-grid></ion-content></div>'
+    var COMPONENTS = [{'name': 'AccountSummaryComponent', 'selector': 'app-account-summary'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CreateAccountPage', 'selector': 'app-create-account'},{'name': 'CreateLoginPage', 'selector': 'app-create-login'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DashboardSummaryPage', 'selector': 'app-dashboard-summary'},{'name': 'DetailsScreenPage', 'selector': 'app-details-screen'},{'name': 'InternalTransferPage', 'selector': 'app-internal-transfer'},{'name': 'InviteUserPage', 'selector': 'app-invite-user'},{'name': 'LoginScreenPage', 'selector': 'app-login-screen'},{'name': 'MeedsharePage', 'selector': 'app-meedshare'},{'name': 'P2pTransferPage', 'selector': 'app-p2p-transfer'},{'name': 'SingupEmailPage', 'selector': 'app-singup-email'},{'name': 'TransactionListPage', 'selector': 'app-transaction-list'}];
     var DIRECTIVES = [{'name': 'DashboardDirective', 'selector': '[appDashboard]'}];
     var ACTUAL_COMPONENT = {'name': 'CreateLoginPage'};
 </script>

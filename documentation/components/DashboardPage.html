@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/dashboard/dashboard.page.ts</code>
+    <code>src/app/customer-panel/dashboard/dashboard.page.ts</code>
 </p>
 
 
@@ -156,7 +156,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/dashboard/dashboard.page.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/customer-panel/dashboard/dashboard.page.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -196,7 +196,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/dashboard/dashboard.page.ts:12</a></div>
+                            class="link-to-prism">src/app/customer-panel/dashboard/dashboard.page.ts:12</a></div>
                 </td>
             </tr>
 
@@ -238,33 +238,25 @@ export class DashboardPage implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;ion-tabs&gt;
-
-	&lt;ion-tab-bar class&#x3D;&quot;dashboard-tab-bar&quot; slot&#x3D;&quot;bottom&quot;&gt;
-		&lt;!-- &lt;ion-tab-button tab&#x3D;&quot;summary&quot;&gt;
-            &lt;ion-icon name&#x3D;&quot;sunny&quot;&gt;&lt;/ion-icon&gt;
-            &lt;ion-label&gt;DASHBOARD&lt;/ion-label&gt;
-          &lt;/ion-tab-button&gt; --&gt;
-
+	&lt;ion-tab-bar slot&#x3D;&quot;bottom&quot;&gt;
 		&lt;ion-tab-button class&#x3D;&quot;tab-item&quot; tab&#x3D;&quot;inviteuser&quot;&gt;
 			&lt;ion-icon name&#x3D;&quot;sunny&quot;&gt;&lt;/ion-icon&gt;
-			&lt;ion-label&gt;INVITE&lt;/ion-label&gt;
+			&lt;ion-label&gt;Home&lt;/ion-label&gt;
 		&lt;/ion-tab-button&gt;
 
 		&lt;ion-tab-button class&#x3D;&quot;tab-item&quot; tab&#x3D;&quot;internaltransfer&quot;&gt;
 			&lt;ion-icon name&#x3D;&quot;moon&quot;&gt;&lt;/ion-icon&gt;
-			&lt;ion-label&gt;INTERNAL TRANSFER&lt;/ion-label&gt;
+			&lt;ion-label&gt;Move Money&lt;/ion-label&gt;
 		&lt;/ion-tab-button&gt;
 		&lt;ion-tab-button class&#x3D;&quot;tab-item&quot; tab&#x3D;&quot;p2ptransfer&quot;&gt;
 			&lt;ion-icon name&#x3D;&quot;moon&quot;&gt;&lt;/ion-icon&gt;
-			&lt;ion-label&gt;P2P TRANSFER&lt;/ion-label&gt;
+			&lt;ion-label&gt;Rewards&lt;/ion-label&gt;
 		&lt;/ion-tab-button&gt;
 		&lt;ion-tab-button class&#x3D;&quot;tab-item&quot; tab&#x3D;&quot;meedshare&quot;&gt;
 			&lt;ion-icon name&#x3D;&quot;moon&quot;&gt;&lt;/ion-icon&gt;
-			&lt;ion-label&gt;MEEDSHARE&lt;/ion-label&gt;
+			&lt;ion-label&gt;Invite&lt;/ion-label&gt;
 		&lt;/ion-tab-button&gt;
 	&lt;/ion-tab-bar&gt;
-
-
 &lt;/ion-tabs&gt;</code></pre>
     </div>
 
@@ -272,18 +264,7 @@ export class DashboardPage implements OnInit {
                 <p class="comment">
                     <code>./dashboard.page.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">.dashboard-tab-bar{
-    display: flex;
-    overflow-x: scroll;
-    .tab-item {
-        display: inline-block !important;
-        width: auto !important;
-    }
-    .tab-item:first-child{
-       
-    }
-}
-</code></pre>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -311,8 +292,8 @@ export class DashboardPage implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-tabs>	<ion-tab-bar class="dashboard-tab-bar" slot="bottom">		<!-- <ion-tab-button tab="summary">            <ion-icon name="sunny"></ion-icon>            <ion-label>DASHBOARD</ion-label>          </ion-tab-button> -->		<ion-tab-button class="tab-item" tab="inviteuser">			<ion-icon name="sunny"></ion-icon>			<ion-label>INVITE</ion-label>		</ion-tab-button>		<ion-tab-button class="tab-item" tab="internaltransfer">			<ion-icon name="moon"></ion-icon>			<ion-label>INTERNAL TRANSFER</ion-label>		</ion-tab-button>		<ion-tab-button class="tab-item" tab="p2ptransfer">			<ion-icon name="moon"></ion-icon>			<ion-label>P2P TRANSFER</ion-label>		</ion-tab-button>		<ion-tab-button class="tab-item" tab="meedshare">			<ion-icon name="moon"></ion-icon>			<ion-label>MEEDSHARE</ion-label>		</ion-tab-button>	</ion-tab-bar></ion-tabs></div>'
-    var COMPONENTS = [{'name': 'AccountSummaryComponent', 'selector': 'app-account-summary'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CreateAccountPage', 'selector': 'app-create-account'},{'name': 'CreateLoginPage', 'selector': 'app-create-login'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DashboardSummaryPage', 'selector': 'app-dashboard-summary'},{'name': 'DetailsScreenPage', 'selector': 'app-details-screen'},{'name': 'InternalTransferPage', 'selector': 'app-internal-transfer'},{'name': 'InviteUserPage', 'selector': 'app-invite-user'},{'name': 'LoginPage', 'selector': 'app-login'},{'name': 'LoginScreenPage', 'selector': 'app-login-screen'},{'name': 'MeedsharePage', 'selector': 'app-meedshare'},{'name': 'P2pTransferPage', 'selector': 'app-p2p-transfer'},{'name': 'SingupEmailPage', 'selector': 'app-singup-email'},{'name': 'TransactionListPage', 'selector': 'app-transaction-list'}];
+        var COMPONENT_TEMPLATE = '<div><ion-tabs>	<ion-tab-bar slot="bottom">		<ion-tab-button class="tab-item" tab="inviteuser">			<ion-icon name="sunny"></ion-icon>			<ion-label>Home</ion-label>		</ion-tab-button>		<ion-tab-button class="tab-item" tab="internaltransfer">			<ion-icon name="moon"></ion-icon>			<ion-label>Move Money</ion-label>		</ion-tab-button>		<ion-tab-button class="tab-item" tab="p2ptransfer">			<ion-icon name="moon"></ion-icon>			<ion-label>Rewards</ion-label>		</ion-tab-button>		<ion-tab-button class="tab-item" tab="meedshare">			<ion-icon name="moon"></ion-icon>			<ion-label>Invite</ion-label>		</ion-tab-button>	</ion-tab-bar></ion-tabs></div>'
+    var COMPONENTS = [{'name': 'AccountSummaryComponent', 'selector': 'app-account-summary'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CreateAccountPage', 'selector': 'app-create-account'},{'name': 'CreateLoginPage', 'selector': 'app-create-login'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DashboardSummaryPage', 'selector': 'app-dashboard-summary'},{'name': 'DetailsScreenPage', 'selector': 'app-details-screen'},{'name': 'InternalTransferPage', 'selector': 'app-internal-transfer'},{'name': 'InviteUserPage', 'selector': 'app-invite-user'},{'name': 'LoginScreenPage', 'selector': 'app-login-screen'},{'name': 'MeedsharePage', 'selector': 'app-meedshare'},{'name': 'P2pTransferPage', 'selector': 'app-p2p-transfer'},{'name': 'SingupEmailPage', 'selector': 'app-singup-email'},{'name': 'TransactionListPage', 'selector': 'app-transaction-list'}];
     var DIRECTIVES = [{'name': 'DashboardDirective', 'selector': '[appDashboard]'}];
     var ACTUAL_COMPONENT = {'name': 'DashboardPage'};
 </script>

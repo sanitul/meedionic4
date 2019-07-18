@@ -13,23 +13,23 @@ export class DetailsScreenPage implements OnInit {
 	pages = [
 		{
 			title: 'HOME',
-			url: '/details-screen/dashboard'
+			url: '/panel/dashboard'
 		},
 		{
 			title: 'INVITE MEMBERS',
-			url: '/details-screen/dashboard/tabs/inviteuser'
+			url: '/panel/dashboard/tabs/inviteuser'
 		},
 		{
 			title: 'INTERNAL TRANSFER',
-			url: '/details-screen/dashboard/tabs/internaltransfer'
+			url: '/panel/dashboard/tabs/internaltransfer'
 		},
 		{
 			title: 'P2P TRANSFER',
-			url: '/details-screen/dashboard/tabs/p2ptransfer'
+			url: '/panel/dashboard/tabs/p2ptransfer'
 		},
 		{
 			title: 'MEEDSHARE',
-			url: '/details-screen/dashboard/tabs/meedshare'
+			url: '/panel/dashboard/tabs/meedshare'
 		}
 	];
 	constructor(private router: Router) {

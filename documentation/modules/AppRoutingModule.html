@@ -72,15 +72,16 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { PreloadAllModules, RouterModule, Routes } from &#x27;@angular/router&#x27;;
-
+/**
+ * App top-level module that is dedicated to routing and imported by the root AppModule
+ * Lazy Loading Feature Modules routes.
+ * default feature loads signup module, which contain all signup page,components etc
+ */
 const routes: Routes &#x3D; [
-	{ path: &#x27;&#x27;, redirectTo: &#x27;singup-email&#x27;, pathMatch: &#x27;full&#x27; },
-	{ path: &#x27;login&#x27;, loadChildren: &#x27;./login/login.module#LoginPageModule&#x27; },
-	{ path: &#x27;details-screen&#x27;, loadChildren: &#x27;./details-screen/details-screen.module#DetailsScreenPageModule&#x27; },
-	{ path: &#x27;singup-email&#x27;, loadChildren: &#x27;./singup-email/singup-email.module#SingupEmailPageModule&#x27; },
-	{ path: &#x27;create-login&#x27;, loadChildren: &#x27;./create-login/create-login.module#CreateLoginPageModule&#x27; },
-	{ path: &#x27;login-screen&#x27;, loadChildren: &#x27;./login-screen/login-screen.module#LoginScreenPageModule&#x27; },
-	{ path: &#x27;create-account&#x27;, loadChildren: &#x27;./create-account/create-account.module#CreateAccountPageModule&#x27; }
+	{ path: &#x27;&#x27;, redirectTo: &#x27;singup&#x27;, pathMatch: &#x27;full&#x27; },
+	{ path: &#x27;singup&#x27;, loadChildren: &#x27;./signup-flow/signup-flow.module#SignupFlowModule&#x27; },
+	{ path: &#x27;login&#x27;, loadChildren: &#x27;./login-screen/login-screen.module#LoginScreenPageModule&#x27; },
+	{ path: &#x27;customer&#x27;, loadChildren: &#x27;./customer-panel/customer-panel.module#CustomerPanelModule&#x27; }
 ];
 
 @NgModule({
