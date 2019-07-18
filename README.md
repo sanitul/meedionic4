@@ -25,6 +25,6 @@ $ ionic cordova build android
 ```
 ### Meed ionic 4 project documentation.
 ```bash
-$ open decumentation file from
+$ open documentation file from
 $ /meedionic4/documentation/index.html
 ```
