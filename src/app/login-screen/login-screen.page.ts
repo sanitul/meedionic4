@@ -60,6 +60,7 @@ export class LoginScreenPage implements OnInit {
 					.then((result: any) => {
 						console.log('success failure fio', result);
 						if (result === 'Success') {
+							this.presentLoading();
 							console.log('fingerprint success');
 							this.secureStorage.create('meed_store').then((storage: SecureStorageObject) => {
 								this.secureStorageHolder = storage;
@@ -83,20 +84,23 @@ export class LoginScreenPage implements OnInit {
 
 						} else {
 							// Fingerprint/Face was not successfully verified
-
+							this.secureStorage.create('meed_store').then((storage: SecureStorageObject) => {
+								this.secureStorageHolder = storage;
+							});
 							console.log('failure');
 						}
 					})
 					.catch((error: any) => {
+						this.secureStorage.create('meed_store').then((storage: SecureStorageObject) => {
+							this.secureStorageHolder = storage;
+						});
 						// Fingerprint/Face was not successfully verified
 					});
 				}
 			});
 
 
-		this.secureStorage.create('meed_store').then((storage: SecureStorageObject) => {
-			this.secureStorageHolder = storage;
-		});
+		
 
 	}
 
