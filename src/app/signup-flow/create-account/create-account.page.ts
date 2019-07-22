@@ -13,7 +13,7 @@ export class CreateAccountPage implements OnInit {
 	ngOnInit() {
 	}
 	gotoCreateLogin() {
-		this.navCtrl.navigateForward('/details-screen/dashboard');
+		this.navCtrl.navigateForward('/customer');
 	}
 
 }
