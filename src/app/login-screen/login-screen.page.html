@@ -20,10 +20,10 @@
 		<ion-segment-button (click)="gotoCreateLogin()" style="color:white" icon-left>
 			<ion-icon style="margin-top: -12px;" name="repeat"></ion-icon>
 			<div>
-				Swith Account
+				Switch Account
 			</div>
 		</ion-segment-button>
-		<ion-segment-button style="color:white" icon-left>
+		<ion-segment-button style="color:white" icon-left (click)="checkBiometric()">
 			<ion-icon style="margin-top: -12px;" name="finger-print"></ion-icon>
 			<div>
 				Face ID
