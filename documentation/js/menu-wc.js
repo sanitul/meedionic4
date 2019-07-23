@@ -257,13 +257,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/LoginScreenPageModule.html" data-type="entity-link">LoginScreenPageModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-LoginScreenPageModule-48359a1fc7a65ddc01548abb04bfeb00"' : 'data-target="#xs-components-links-module-LoginScreenPageModule-48359a1fc7a65ddc01548abb04bfeb00"' }>
+                                            'data-target="#components-links-module-LoginScreenPageModule-a04799b30810721e7a0308429f05d3ad"' : 'data-target="#xs-components-links-module-LoginScreenPageModule-a04799b30810721e7a0308429f05d3ad"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-LoginScreenPageModule-48359a1fc7a65ddc01548abb04bfeb00"' :
-                                            'id="xs-components-links-module-LoginScreenPageModule-48359a1fc7a65ddc01548abb04bfeb00"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-LoginScreenPageModule-a04799b30810721e7a0308429f05d3ad"' :
+                                            'id="xs-components-links-module-LoginScreenPageModule-a04799b30810721e7a0308429f05d3ad"' }>
                                             <li class="link">
                                                 <a href="components/LoginScreenPage.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">LoginScreenPage</a>

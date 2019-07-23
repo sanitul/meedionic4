@@ -136,6 +136,13 @@
                             <li>
                                 <a href="#loginForm">loginForm</a>
                             </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#platform">platform</a>
+                            </li>
+                            <li>
+                                <a href="#secureStorageHolder">secureStorageHolder</a>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -148,6 +155,9 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
+                            <li>
+                                <a href="#checkBiometric">checkBiometric</a>
+                            </li>
                             <li>
                                 <a href="#doLogin">doLogin</a>
                             </li>
@@ -179,12 +189,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(navCtrl: NavController, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, loadingController: LoadingController)</code>
+<code>constructor(navCtrl: NavController, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, loadingController: LoadingController, fingerprintAIO: FingerprintAIO, secureStorage: SecureStorage, platform: Platform)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/login-screen/login-screen.page.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/login-screen/login-screen.page.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -237,6 +247,42 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>fingerprintAIO</td>
+                                                  
+                                                        <td>
+                                                                    <code>FingerprintAIO</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>secureStorage</td>
+                                                  
+                                                        <td>
+                                                                    <code>SecureStorage</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -259,6 +305,48 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="checkBiometric"></a>
+                    <span class="name">
+                        <b>
+                            checkBiometric
+                        </b>
+                        <a href="#checkBiometric"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkBiometric()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/login-screen/login-screen.page.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>checkBiometric() from button click event
+Proceed fingerprint authentication using fingerprint sensors or FaceID and device&#39;s secure storage</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="doLogin"></a>
                     <span class="name">
                         <b>
@@ -277,14 +365,17 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="23"
-                            class="link-to-prism">src/app/login-screen/login-screen.page.ts:23</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/login-screen/login-screen.page.ts:36</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>doLogin() login form submit event
+if login form have both fields values then reset the login form and navigate to customer panel dashboard.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -347,14 +438,17 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="29"
-                            class="link-to-prism">src/app/login-screen/login-screen.page.ts:29</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/login-screen/login-screen.page.ts:48</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>gotoCreateLogin() from button click event
+navigate to singup flow feature module, default route to email singup screen</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -386,14 +480,17 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="17"
-                            class="link-to-prism">src/app/login-screen/login-screen.page.ts:17</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/login-screen/login-screen.page.ts:26</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>ngOnInit()
+Initialize the singup form control and set the default value</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -420,25 +517,55 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>presentLoading()</code>
+                    <code>presentLoading(successCallback)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/login-screen/login-screen.page.ts:33</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/login-screen/login-screen.page.ts:55</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>presentLoading()
+show app loading component with autohide in 2 seconds.</p>
+</div>
 
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>successCallback</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -471,7 +598,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/login-screen/login-screen.page.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/login-screen/login-screen.page.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -498,7 +625,62 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/login-screen/login-screen.page.ts:10</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/login-screen/login-screen.page.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="platform"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            platform</b>
+                            <a href="#platform"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Platform</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/login-screen/login-screen.page.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="secureStorageHolder"></a>
+                        <span class="name">
+                            <b>
+                            secureStorageHolder</b>
+                            <a href="#secureStorageHolder"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>SecureStorageObject</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/login-screen/login-screen.page.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -512,8 +694,10 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { NavController, LoadingController } from &#x27;@ionic/angular&#x27;;
+import { NavController, LoadingController, Platform, } from &#x27;@ionic/angular&#x27;;
 import { FormGroup, FormControl, FormBuilder } from &#x27;@angular/forms&#x27;;
+import { FingerprintAIO } from &#x27;@ionic-native/fingerprint-aio/ngx&#x27;;
+import { SecureStorage, SecureStorageObject } from &#x27;@ionic-native/secure-storage/ngx&#x27;;
 @Component({
 	selector: &#x27;app-login-screen&#x27;,
 	templateUrl: &#x27;./login-screen.page.html&#x27;,
@@ -521,29 +705,49 @@ import { FormGroup, FormControl, FormBuilder } from &#x27;@angular/forms&#x27;;
 })
 export class LoginScreenPage implements OnInit {
 	loginForm: FormGroup;
+	secureStorageHolder: SecureStorageObject;
 	constructor(
 		private navCtrl: NavController,
 		private formBuilder: FormBuilder,
-		public loadingController: LoadingController
+		public loadingController: LoadingController,
+		private fingerprintAIO: FingerprintAIO,
+		private secureStorage: SecureStorage,
+		public platform: Platform
 	) { }
-
+	/**
+	 * ngOnInit()
+	 * Initialize the singup form control and set the default value
+	 */
 	ngOnInit() {
 		this.loginForm &#x3D; this.formBuilder.group({
 			username: new FormControl(&#x27;&#x27;),
 			password: new FormControl(&#x27;&#x27;)
 		});
 	}
+	/**
+	 * doLogin() login form submit event
+	 * if login form have both fields values then reset the login form and navigate to customer panel dashboard.
+	 */
 	doLogin(credentials: any) {
 		if (credentials.username &amp;&amp; credentials.password) {
-			this.loginForm.reset();
-			this.presentLoading();
+			this.presentLoading((success) &#x3D;&gt; {
+				this.loginForm.reset();
+				this.navCtrl.navigateForward(&#x27;/customer&#x27;);
+			});
 		}
 	}
+	/**
+	 * gotoCreateLogin() from button click event
+	 * navigate to singup flow feature module, default route to email singup screen
+	 */
 	gotoCreateLogin() {
 		this.navCtrl.navigateForward(&#x27;/singup/email&#x27;);
 	}
-
-	async presentLoading() {
+	/**
+	 * presentLoading()
+	 * show app loading component with autohide in 2 seconds.
+	 */
+	async presentLoading(successCallback) {
 		const loading &#x3D; await this.loadingController.create({
 			message: &#x27;Please wait...&#x27;,
 			duration: 2000
@@ -551,10 +755,52 @@ export class LoginScreenPage implements OnInit {
 		await loading.present();
 		loading.onDidDismiss()
 			.then((data) &#x3D;&gt; {
-				this.navCtrl.navigateForward(&#x27;/customer&#x27;);
+				successCallback(data);
 			});
 	}
-
+	/**
+	 * checkBiometric() from button click event
+	 * Proceed fingerprint authentication using fingerprint sensors or FaceID and device&#x27;s secure storage
+	 */
+	checkBiometric() {
+		if (!this.platform.is(&#x27;cordova&#x27;)) {
+			return false;
+		}
+		this.fingerprintAIO.isAvailable().then(isAvailableSuccess &#x3D;&gt; {
+				if (isAvailableSuccess &#x3D;&#x3D;&#x3D; &#x27;finger&#x27; || isAvailableSuccess &#x3D;&#x3D;&#x3D; &#x27;face&#x27;) {
+					// Fingerprint or Face Auth is available
+					this.fingerprintAIO.show({
+						clientId: &#x27;Meed App&#x27;, // Android: Used for encryption. iOS: used for dialogue if no &#x60;localizedReason&#x60; is given.
+						clientSecret: &#x27;Meed App&#x27;, // Necessary for Android encrpytion of keys. Use random secret key.
+					}).then((result: any) &#x3D;&gt; {
+						if (result &#x3D;&#x3D;&#x3D; &#x27;Success&#x27;) {
+							this.presentLoading((success) &#x3D;&gt; {
+								this.navCtrl.navigateForward(&#x27;/customer&#x27;);
+							});
+							this.secureStorage.create(&#x27;meed_store&#x27;).then((storage: SecureStorageObject) &#x3D;&gt; {
+								this.secureStorageHolder &#x3D; storage;
+								storage.get(&#x27;username&#x27;).then((username) &#x3D;&gt; {
+									storage.get(&#x27;password&#x27;).then((pass) &#x3D;&gt; {
+									}, (errorPasssword) &#x3D;&gt; {
+									});
+								}, (errorUsername) &#x3D;&gt; {
+								});
+							});
+						} else {
+							// Fingerprint/Face was not successfully verified
+							this.secureStorage.create(&#x27;meed_store&#x27;).then((storage: SecureStorageObject) &#x3D;&gt; {
+								this.secureStorageHolder &#x3D; storage;
+							});
+						}
+					}).catch((error: any) &#x3D;&gt; {
+						// Fingerprint/Face was not successfully verified
+						this.secureStorage.create(&#x27;meed_store&#x27;).then((storage: SecureStorageObject) &#x3D;&gt; {
+							this.secureStorageHolder &#x3D; storage;
+						});
+					});
+				}
+			});
+	}
 }
 </code></pre>
     </div>
@@ -582,10 +828,10 @@ export class LoginScreenPage implements OnInit {
 		&lt;ion-segment-button (click)&#x3D;&quot;gotoCreateLogin()&quot; style&#x3D;&quot;color:white&quot; icon-left&gt;
 			&lt;ion-icon style&#x3D;&quot;margin-top: -12px;&quot; name&#x3D;&quot;repeat&quot;&gt;&lt;/ion-icon&gt;
 			&lt;div&gt;
-				Swith Account
+				Switch Account
 			&lt;/div&gt;
 		&lt;/ion-segment-button&gt;
-		&lt;ion-segment-button style&#x3D;&quot;color:white&quot; icon-left&gt;
+		&lt;ion-segment-button style&#x3D;&quot;color:white&quot; icon-left (click)&#x3D;&quot;checkBiometric()&quot;&gt;
 			&lt;ion-icon style&#x3D;&quot;margin-top: -12px;&quot; name&#x3D;&quot;finger-print&quot;&gt;&lt;/ion-icon&gt;
 			&lt;div&gt;
 				Face ID
@@ -665,7 +911,7 @@ export class LoginScreenPage implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ion-content padding class="login-screen">	<div class="login-screen-pagecontent">		<img width="80" src="assets/meed_white_logo.png">		<h1 style="font-weight: bold;color:white;margin-bottom: 30px;">Welcome back!</h1>		<form [formGroup]="loginForm" (ngSubmit)="doLogin(loginForm.value)">			<ion-input (keyup.enter)="doLogin(loginForm.value)" formControlName="username" clearInput				placeholder="Your email address" type="email" class="login-screen-email-input">			</ion-input>			<ion-input (keyup.enter)="doLogin(loginForm.value)" formControlName="password" clearInput				placeholder="Your password" type="password" class="login-screen-password-input">			</ion-input>		</form>		<p>			<a style="color: #96A9FC">Forget password?</a>		</p>	</div></ion-content><ion-footer class="login-screen-footer">	<ion-segment style="background:#405AD1;height:55px;">		<ion-segment-button (click)="gotoCreateLogin()" style="color:white" icon-left>			<ion-icon style="margin-top: -12px;" name="repeat"></ion-icon>			<div>				Swith Account			</div>		</ion-segment-button>		<ion-segment-button style="color:white" icon-left>			<ion-icon style="margin-top: -12px;" name="finger-print"></ion-icon>			<div>				Face ID			</div>		</ion-segment-button>		<ion-segment-button style="color:white" icon-left>			<ion-icon style="margin-top: -12px;" name="more"></ion-icon>			<div>				More Options			</div>		</ion-segment-button>	</ion-segment></ion-footer></div>'
+        var COMPONENT_TEMPLATE = '<div><ion-content padding class="login-screen">	<div class="login-screen-pagecontent">		<img width="80" src="assets/meed_white_logo.png">		<h1 style="font-weight: bold;color:white;margin-bottom: 30px;">Welcome back!</h1>		<form [formGroup]="loginForm" (ngSubmit)="doLogin(loginForm.value)">			<ion-input (keyup.enter)="doLogin(loginForm.value)" formControlName="username" clearInput				placeholder="Your email address" type="email" class="login-screen-email-input">			</ion-input>			<ion-input (keyup.enter)="doLogin(loginForm.value)" formControlName="password" clearInput				placeholder="Your password" type="password" class="login-screen-password-input">			</ion-input>		</form>		<p>			<a style="color: #96A9FC">Forget password?</a>		</p>	</div></ion-content><ion-footer class="login-screen-footer">	<ion-segment style="background:#405AD1;height:55px;">		<ion-segment-button (click)="gotoCreateLogin()" style="color:white" icon-left>			<ion-icon style="margin-top: -12px;" name="repeat"></ion-icon>			<div>				Switch Account			</div>		</ion-segment-button>		<ion-segment-button style="color:white" icon-left (click)="checkBiometric()">			<ion-icon style="margin-top: -12px;" name="finger-print"></ion-icon>			<div>				Face ID			</div>		</ion-segment-button>		<ion-segment-button style="color:white" icon-left>			<ion-icon style="margin-top: -12px;" name="more"></ion-icon>			<div>				More Options			</div>		</ion-segment-button>	</ion-segment></ion-footer></div>'
     var COMPONENTS = [{'name': 'AccountSummaryComponent', 'selector': 'app-account-summary'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CreateAccountPage', 'selector': 'app-create-account'},{'name': 'CreateLoginPage', 'selector': 'app-create-login'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DashboardSummaryPage', 'selector': 'app-dashboard-summary'},{'name': 'DetailsScreenPage', 'selector': 'app-details-screen'},{'name': 'InternalTransferPage', 'selector': 'app-internal-transfer'},{'name': 'InviteUserPage', 'selector': 'app-invite-user'},{'name': 'LoginScreenPage', 'selector': 'app-login-screen'},{'name': 'MeedsharePage', 'selector': 'app-meedshare'},{'name': 'P2pTransferPage', 'selector': 'app-p2p-transfer'},{'name': 'SingupEmailPage', 'selector': 'app-singup-email'},{'name': 'TransactionListPage', 'selector': 'app-transaction-list'}];
     var DIRECTIVES = [{'name': 'DashboardDirective', 'selector': '[appDashboard]'}];
     var ACTUAL_COMPONENT = {'name': 'LoginScreenPage'};

@@ -148,6 +148,8 @@ import { FormsModule } from &#x27;@angular/forms&#x27;;
 import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
 import { ReactiveFormsModule } from &#x27;@angular/forms&#x27;;
 import { IonicModule } from &#x27;@ionic/angular&#x27;;
+import { FingerprintAIO } from &#x27;@ionic-native/fingerprint-aio/ngx&#x27;;
+import { SecureStorage, SecureStorageObject } from &#x27;@ionic-native/secure-storage/ngx&#x27;;
 
 import { LoginScreenPage } from &#x27;./login-screen.page&#x27;;
 
@@ -166,7 +168,11 @@ const routes: Routes &#x3D; [
 		IonicModule,
 		RouterModule.forChild(routes)
 	],
-	declarations: [LoginScreenPage]
+	declarations: [LoginScreenPage],
+	providers: [
+		FingerprintAIO,
+		SecureStorage
+	]
 })
 export class LoginScreenPageModule { }
 </code></pre>
