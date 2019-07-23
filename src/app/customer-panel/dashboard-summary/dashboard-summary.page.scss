@@ -1,0 +1,25 @@
+.dashboard-header {
+  .meed-logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+
+  .meed-welcome-message {
+    font-weight: bolder;
+    font-size: 2.5em;
+  }
+  .text-color {
+    color: lightgray;
+  }
+  .meed-available-money {
+    font-weight: bolder;
+    font-size: 1.6em;
+  }
+
+  ion-progress-bar {
+    --progress-background: lightgreen;
+    --buffer-background: orange;
+  }
+}
