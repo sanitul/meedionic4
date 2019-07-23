@@ -80,7 +80,9 @@
 			"cordova-plugin-ionic-webview": {},
 			"cordova-plugin-ionic-keyboard": {},
 			"cordova-plugin-secure-storage": {},
-			"cordova-plugin-fingerprint-aio": {}
+			"cordova-plugin-fingerprint-aio": {
+				"FACEID_USAGE_DESCRIPTION": " "
+			}
 		},
 		"platforms": [
 			"ios"
