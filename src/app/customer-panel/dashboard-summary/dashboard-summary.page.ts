@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardSummaryPage implements OnInit {
 
+	welcomeMessage = 'Good morning';
+	customerName = 'David';
+	money = '$2545.00';
+
+	meedBankLogo = 'https://s3.amazonaws.com/prod-meed-www/bank_logos/meed_white_logo.png';
+
 	constructor() { }
 
 	ngOnInit() {
