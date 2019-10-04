@@ -1,0 +1,220 @@
+ps-checkout-wrapper {
+  background-color: #FFFFFF !important;
+}
+
+.ps-theme-checkout-standard .ps-header-view {
+    margin-top: 100px!important;
+}
+
+.ps-theme-checkout-standard .ps-header-view .ps-header-wrap {
+    min-height: 80px!important;
+    max-height: 100px!important;
+}
+
+.ps-theme-checkout-standard .ps-header-view .ps-header-amount-wrap {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px 20px 0!important;
+}
+
+.ps-theme-checkout-standard .ps-header-view .ps-details-intro {
+  margin-top:0px!important;
+}
+
+.ps-theme-checkout-standard .ps-header-view .ps-header-content {
+    padding: 0px;
+}
+
+.ps-header-content {
+  color: black!important;
+  height: 100px!important;
+  background: #f2f2f2!important;
+}
+/* .ps-header-inner {
+  display: none;
+} */
+.ps-theme-checkout-standard .ps-header-view .ps-total-amount-fixed {
+    background: #e5e5e5!important;
+    padding: 6px 0px!important;
+    margin: 0px 20%;
+/*     transform: translate(-20%, 0px); */
+}
+.ps-theme-checkout-standard .ps-header-view .no-logo .ps-header-amount {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.ps-theme-checkout-standard .ps-header-view .ps-details-intro {
+  border-top: none!important;
+  color:black!important;
+  font-weight: 300;
+/*   transform: translate(-13%, 0px); */
+}
+
+.ps-theme-checkout-standard .ps-header-view .ps-total-amount-fixed span{
+  font-weight: 300;
+}
+
+.ps-theme-checkout-standard .ps-payer-edit label {
+    color: black;
+    font-weight: 300!important;
+}
+
+.ps-dialog-close {
+  display: none;
+}
+
+.logo {
+  margin: 10px !important;
+}
+
+.ps-checkout-content {
+  font-family: "Averta W03 Light1583317";
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #FFFFFF;
+  background-size: cover;
+}
+.ps-header-wrap {
+  background-color:#F2F2F2 !important;
+}
+.ps-details-intro {
+  border-top-color: #F2F2F2 !important;
+}
+.ps-header-description {
+  color: #FFFFFF !important;
+}
+.ps-contact {
+  visibility: hidden;
+}
+.ps-header-logo-wrap {
+  visibility: hidden;
+}
+.ps-powered-by {
+  visibility: hidden;
+}
+.ps-checkout {
+  background-color: #FFFFFF !important;
+}
+.ps-header-inner {
+  background-color: #FFFFFF !important;
+}
+
+.ps-receipt-background {
+  background-color: #FFFFFF !important;
+}
+
+.ps-input-group {
+    margin: 0px 10px;
+}
+
+.ps-no-input-group {
+  margin: 0px 10px;
+}
+
+ps-button.ps-button.ps-button-second {
+    margin: 0pc 10px;
+}
+
+.ps-field.ps-field-payer-country {
+    margin: 0px -10px;
+}
+
+.ps-field.ps-field-payer-state {
+    margin: 0px -10px;
+}
+
+.ps-theme-checkout-standard .ps-button-back {
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.ps-fund-progress.ps-progress-card {
+    margin: 0px 10px;
+}
+
+.ps-bank-logos.fade-in {
+    margin-left: 4px;
+}
+
+.ps-bank-choose-link-wrap {
+    width: 20%;
+}
+
+.ps-theme-base .ps-fund-buttons .ps-fund-button {
+  border-radius: 5px!important;
+  height: 44px!important;
+  margin-right: 10px!important;
+  margin-left: 10px!important;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ps-theme-base .ps-fund-buttons .ps-fund-button.is-active {
+    background: #82d8ff!important;
+}
+
+.ps-theme-base .ps-button button {
+    font-size: 18px;
+    font-weight: 400;
+    height: 44px!important;
+    background: #82d8ff;
+}
+
+.ps-theme-checkout-standard .ps-fund-select-type-buttons {
+  margin-bottom: 30px;
+  border: 0px;
+  background: #f2f2f2;
+}
+
+.ps-theme-base md-autocomplete {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ps-theme-checkout-standard md-input-container .md-input {
+    border: 1px solid #bbb!important;
+    border-radius: 12px!important;
+}
+
+.ps-theme-base .md-whiteframe-z1 {
+    border: 1px solid #bbb!important;
+    border-radius: 12px!important;
+}
+
+.ps-theme-checkout-standard .ps-security-icon {
+  display: none;
+}
+
+.ps-theme-checkout-standard .ps-button-pay button {
+  background: #82d8ff;
+}
+
+.ps-theme-checkout-standard .ps-receipt-background {
+    background: white;
+}
+
+.ps-theme-checkout-standard .ps-receipt-content i {
+    color: #82d8ff;
+    font-weight: bold;
+}
+
+.ps-theme-checkout-standard .ps-receipt-content {
+    margin-top: 15vh;
+    padding: 0 30px;
+}
+
+.ps-theme-checkout-standard .ps-receipt-content-wrap p {
+  font-weight: 300;
+    margin-top: 30px!important;
+    font-size: 18px!important;
+}
+.ps-theme-checkout-standard .ps-receipt-content-wrap h1 {
+  font-weight: 400;
+    font-size: 22px!important;
+}
+
+.ps-theme-checkout-standard .ps-receipt-content-wrap {
+  color: black!important;
+}
