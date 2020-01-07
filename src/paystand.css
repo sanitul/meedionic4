@@ -228,15 +228,27 @@ ps-button.ps-button.ps-button-second {
 	max-width: 600px;
 	margin: -8px auto 0
 }
+.ps-alert-error {
+	left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 0;
+  bottom: 0;
+  top: auto;
+  padding: 0;
+}
 @media (min-width: 960px) {
 		.md-toast.md-top {
-				left: 0;
-				right: 0;
-				width: 100%;
-				max-width: 100%;
-				min-width: 0;
-				border-radius: 0;
-				bottom: 0;
-				padding: 0;
+				    left: 0;
+				    right: 0;
+				    width: 100%;
+				    max-width: 100%;
+				    min-width: 0;
+				    border-radius: 0;
+				    bottom: 0;
+				    top: auto;
+				    padding: 0;
 		}
 	}
